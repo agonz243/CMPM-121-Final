@@ -25,24 +25,28 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float inputH = Input.GetAxisRaw("Horizontal");
-        float inputV = Input.GetAxisRaw("Vertical");
-        Vector3 direction = new Vector3(inputH, 0f, inputV).normalized;
 
-        if(direction.magnitude >= 0.1f) 
-        {
+        if (this.isActiveAndEnabled) {
 
-            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
-            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVel, turnSmoothing);
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+            float inputH = Input.GetAxisRaw("Horizontal");
+            float inputV = Input.GetAxisRaw("Vertical");
+            Vector3 direction = new Vector3(inputH, 0f, inputV).normalized;
+
+            if(direction.magnitude >= 0.1f) 
+            {
+
+                float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVel, turnSmoothing);
+                transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
 
 
-            Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-            controller.Move(moveDirection.normalized * speed * Time.deltaTime);
-            
-            // Rotate player model
-            playerGFX.transform.Rotate(Vector3.right * speed/6);
+                Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+                controller.Move(moveDirection.normalized * speed * Time.deltaTime);
+                
+                // Rotate player model
+                playerGFX.transform.Rotate(Vector3.right * speed/6);
+            }
         }
     }
 }
