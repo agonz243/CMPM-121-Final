@@ -6,14 +6,12 @@ public class EnemyMovement : MonoBehaviour
 {
 
     public NavMeshAgent agent;
-    public GameObject player;
-    private Vector3 playerPos;
+    public Transform player;
 
 
     // Update is called once per frame
     void Update()
     {
-        playerPos = player.transform.position;
-        agent.SetDestination(playerPos);
+        agent.SetDestination(player.position);
     }
 }
