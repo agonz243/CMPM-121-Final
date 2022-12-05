@@ -9,9 +9,11 @@ public class sauceCollide : MonoBehaviour
     public bool samePud = true;
 
     public playerMovement player;
+    public ParticleSystem ps;
 
     void Start()
     {
+        ps = GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -21,21 +23,27 @@ public class sauceCollide : MonoBehaviour
             targetTime -= Time.deltaTime;
             if (targetTime <= 2.0f){
                 samePud = true;
+                
             }
             if (targetTime <= 0.0f){
                 puddle = false;
-                player.speed -= 10.0f;
+                player.speed -= 20.0f;
                 targetTime = 3.0f;
+                ps.Stop();
+                ps.Clear();
             }
+        } else {
+            ps.Stop();
         }
     }
 
     void OnTriggerEnter(Collider collision){
         // Debug.Log(collision.gameObject.name);
         if ((collision.gameObject.name == "boysenchild") && samePud){
-            player.speed += 10.0f;
+            player.speed += 20.0f;
             puddle = true;
             samePud = false;
+            ps.Play();
         }
     }
 }
