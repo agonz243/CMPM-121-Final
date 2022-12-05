@@ -16596,6 +16596,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 06718229b8ffdf347a8520d37bd180af,
         type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 06718229b8ffdf347a8520d37bd180af,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -18204,6 +18209,7 @@ GameObject:
   - component: {fileID: 777790043}
   - component: {fileID: 777790044}
   - component: {fileID: 777790045}
+  - component: {fileID: 777790046}
   m_Layer: 7
   m_Name: Enemy Customer
   m_TagString: Untagged
@@ -18308,6 +18314,18 @@ MonoBehaviour:
   agent: {fileID: 777790039}
   targetTime: 3
   hit: 0
+--- !u!114 &777790046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777790038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64ef3fc5e86e8cc4f9d8206aa17f5e77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &778519425
 GameObject:
   m_ObjectHideFlags: 0
@@ -26512,7 +26530,7 @@ GameObject:
   - component: {fileID: 1332249024}
   m_Layer: 3
   m_Name: Third Person Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44465,7 +44483,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090488453}
-  m_LocalRotation: {x: 0.04730443, y: -0.00000000214839, z: 1.0174227e-10, w: 0.9988805}
+  m_LocalRotation: {x: 0.04730443, y: 0.0000000021483895, z: -1.0174225e-10, w: 0.9988805}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
