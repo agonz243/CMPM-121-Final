@@ -26,16 +26,13 @@ public class potatoCollide : MonoBehaviour
                 targetTime = 3.0f;
             }
         }
-        // Debug.Log(agent.speed);
     }
 
     void OnTriggerEnter(Collider collision){
         if (collision.gameObject.name == "potatoPoop(Clone)"){
             agent.speed -= 3.0f;
             hit = true;
+            Destroy(collision.gameObject);
         }
     }
-    // void Update(){
-    //     Debug.Log(agent.velocity);
-    // }
 }
