@@ -2936,7 +2936,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180446364}
-  m_LocalRotation: {x: 0.04730443, y: -0.00000000214839, z: 1.0174227e-10, w: 0.9988805}
+  m_LocalRotation: {x: 0.04730443, y: 0.0000000021483895, z: -1.0174225e-10, w: 0.9988805}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11785,12 +11785,12 @@ NavMeshAgent:
   m_GameObject: {fileID: 777790038}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 23.99
-  m_Speed: 120
-  m_Acceleration: 15
+  m_Radius: 16.62
+  m_Speed: 90
+  m_Acceleration: 100
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 100
+  m_AngularSpeed: 500
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -11806,7 +11806,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 777790038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -458.6175, y: 115.774124, z: 95.8}
+  m_LocalPosition: {x: -376, y: 115.774124, z: 717}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19680,7 +19680,7 @@ MonoBehaviour:
   controller: {fileID: 1332249018}
   cam: {fileID: 330585546}
   playerGFX: {fileID: 699648064}
-  speed: 65
+  speed: 80
   turnSmoothing: 0.1
 --- !u!4 &1333828874 stripped
 Transform:
@@ -20732,6 +20732,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1390439486}
   - component: {fileID: 1390439487}
+  - component: {fileID: 1390439488}
   m_Layer: 6
   m_Name: Front Desk
   m_TagString: Untagged
@@ -20772,6 +20773,22 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!208 &1390439488
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390439485}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &1403485310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22363,6 +22380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1513372267}
   - component: {fileID: 1513372268}
+  - component: {fileID: 1513372269}
   m_Layer: 6
   m_Name: Chidren's Area Assets
   m_TagString: Untagged
@@ -22405,6 +22423,22 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!208 &1513372269
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513372266}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1515854452
 GameObject:
   m_ObjectHideFlags: 0
@@ -26610,6 +26644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1797022837}
   - component: {fileID: 1797022838}
+  - component: {fileID: 1797022839}
   m_Layer: 6
   m_Name: Bedroom Area Assets
   m_TagString: Untagged
@@ -26664,6 +26699,22 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!208 &1797022839
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797022836}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1798138587 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 80d2be87b0c8bf94f94945245fe2114a,
@@ -27070,6 +27121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1819244943}
   - component: {fileID: 1819244944}
+  - component: {fileID: 1819244945}
   m_Layer: 6
   m_Name: Justin's Assets
   m_TagString: Untagged
@@ -27195,6 +27247,22 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!208 &1819244945
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819244942}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &1830181191 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7653492663483388311, guid: 2b4552cd26236234aa699bacddefde32,
@@ -29469,6 +29537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1959143429}
   - component: {fileID: 1959143430}
+  - component: {fileID: 1959143431}
   m_Layer: 6
   m_Name: Julie's Assets
   m_TagString: Untagged
@@ -29551,6 +29620,22 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!208 &1959143431
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959143428}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1964491790 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2108499854548136725, guid: 0dd7b6be9402212409eac4505b399353,
@@ -30823,6 +30908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2024496048}
   - component: {fileID: 2024496049}
+  - component: {fileID: 2024496050}
   m_Layer: 6
   m_Name: Walls
   m_TagString: Untagged
@@ -30889,6 +30975,22 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!208 &2024496050
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024496047}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!4 &2040189714 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d5502c72dfd40224a8a8f8d75de3c4d9,
@@ -31944,7 +32046,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090488453}
-  m_LocalRotation: {x: 0.04730443, y: 0.0000000021483895, z: -1.0174225e-10, w: 0.9988805}
+  m_LocalRotation: {x: 0.04730443, y: -0.00000000214839, z: 1.0174227e-10, w: 0.9988805}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -32621,7 +32723,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131745990}
-  m_LocalRotation: {x: 0.08355751, y: 0.000000018209233, z: -0.0000000015268576, w: 0.996503}
+  m_LocalRotation: {x: 0.08355749, y: -0.000000016626863, z: 0.0000000013941743, w: 0.996503}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
