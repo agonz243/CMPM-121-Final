@@ -22,7 +22,7 @@ public class potatoCollide : MonoBehaviour
             targetTime -= Time.deltaTime;
             if (targetTime <= 0.0f){
                 hit = false;
-                agent.speed += 3.0f;
+                agent.speed += 50.0f;
                 targetTime = 3.0f;
             }
         }
@@ -30,7 +30,7 @@ public class potatoCollide : MonoBehaviour
 
     void OnTriggerEnter(Collider collision){
         if (collision.gameObject.name == "potatoPoop(Clone)"){
-            agent.speed -= 3.0f;
+            agent.speed -= 50.0f;
             hit = true;
             Destroy(collision.gameObject);
         }
