@@ -10,7 +10,8 @@ public class sauceCollide : MonoBehaviour
 
     public playerMovement player;
     public ParticleSystem ps;
-
+    public AudioSource source;
+    public AudioClip clip;
     void Start()
     {
         ps = GetComponent<ParticleSystem>();
@@ -34,6 +35,7 @@ public class sauceCollide : MonoBehaviour
             }
         } else {
             ps.Stop();
+            source.Stop();
         }
     }
 
@@ -44,6 +46,7 @@ public class sauceCollide : MonoBehaviour
             puddle = true;
             samePud = false;
             ps.Play();
+            source.PlayOneShot(clip);
         }
     }
 }
